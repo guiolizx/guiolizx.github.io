@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import pfp from "./assets/pfp.png"
+import terminal_bg from "./assets/terminal_bg.png"
 import './App.css'
 
 function App() {
@@ -55,9 +57,9 @@ function App() {
         <a>Links Úteis</a>
       </nav>
       <div className='hero'>
-        <img className='pfp' width={"300px"} src="Assets/pfp.png"></img>
+        <img className='pfp' width={"300px"} src={pfp}></img>
         <h2 className='name'>Guilherme Oliveira</h2>
-        <img className='terminal' src="Assets/terminal_bg.png"></img>
+        <img className='terminal' src={terminal_bg}></img>
         <h1 className='typing'>
           {textoAtual}
           <span className='cursor'>|</span>
