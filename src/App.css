@@ -1,0 +1,75 @@
+*{
+  padding: 0;
+  margin: 0;
+  gap: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background-image: url("../Assets/bg.png");
+}
+
+nav{
+  background-color: var(--dois);
+  height:3rem;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-left: 35px;
+}
+
+nav a{
+  color: white;
+  font-weight: bold;
+}
+
+.hero .pfp {
+  border-radius: 100%;
+  width: 300px;
+  margin: 90px;
+  box-shadow: 0 0 21.9px 0 #0E0E51;
+}
+
+.hero .name {
+  position: absolute;
+  color:white;
+  font-weight: bold;
+  top: 400px;
+  left: 220px;
+  background-color: var(--cinco);
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  border-radius: 1rem;
+
+}
+
+.typing {
+  color: #a3a3d5;
+  font-size: 60px;
+  position: absolute;
+  top: 250px;
+  left: 600px;
+}
+
+.cursor {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.terminal{
+  position: absolute;
+  top: 200px;
+  left: 570px;
+  width: 650px;
+  box-shadow: 0 0 10px 2px #0E0E51;
+}
+
