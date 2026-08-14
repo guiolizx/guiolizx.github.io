@@ -4,9 +4,21 @@
   gap: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+section{
+  scroll-margin-top: 80px;
+}
 
 body{
   background-image: url("../Assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 nav{
@@ -16,11 +28,15 @@ nav{
   align-items: center;
   gap: 35px;
   padding-left: 35px;
+  position: fixed;
+  width: 100vw;
+  z-index: 1000;
 }
 
 nav a{
   color: white;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .hero .pfp {
@@ -73,3 +89,182 @@ nav a{
   box-shadow: 0 0 10px 2px #0E0E51;
 }
 
+#tec {
+  margin-top: 150px;
+}
+
+.session{
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+}
+
+.tecnologias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecnologias .top, .tecnologias .bottom {
+  margin: 16px;
+  display: flex;
+  gap:16px;
+}
+
+.projetos{
+  display: flex;
+  flex-direction: column;
+  margin-left: 39px;
+  margin-right: 37px;
+}
+
+.projetos .card {
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projetos .card .title{
+  color:white;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 19px;
+}
+
+.projetos .card img {
+  height: 321px;
+}
+
+.projetos .card .body {
+  display: flex;
+}
+
+.projetos .card .body .right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13px;
+}
+
+.projetos .card .body .right p {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  flex:10;
+}
+
+.projetos .card .body .right .bottom {
+  display: flex;
+  flex:.1;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.projetos .card .body .right .bottom button{
+  border-radius: 16px;
+  background: #0E0E51;
+  box-shadow: 0 0 8.3px 5px rgba(5, 2, 90, 0.25);
+
+  border:none;
+  width: 428px;
+  height: 48px;
+  color:white;
+  text-align: center;
+  text-anchor: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  font-size: 24px;
+  font-weight: 700;
+  transition: 50ms ease-out;
+  cursor: pointer;
+}
+
+.projetos .card .body .right .bottom button:hover{
+  transform: scale(1.05);
+  transition: 50ms ease-in;
+}
+
+
+
+.projetos .card .body .right .bottom .tecu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+}
+
+.projetos .card .body .right .bottom .tecu div {
+  display: flex;
+  gap:12px;
+}
+.projetos .card .body .right .bottom .tecu h3 {
+  color:white;
+  font-size: 24px;
+  width: 257px;
+  text-align: center;
+
+}
+
+
+.projetos .card .body .right .bottom .tecu div img {
+  height: 55px;
+}
+
+
+
+.links .bottom button, .links .top button{
+  border-radius: 16px;
+  background: #0E0E51;
+  box-shadow: 0 0 8.3px 5px rgba(5, 2, 90, 0.25);
+
+  border:none;
+  width: 428px;
+  height: 48px;
+  color:white;
+  text-align: center;
+  text-anchor: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  font-size: 24px;
+  font-weight: 700;
+  transition: 50ms ease-out;
+  cursor: pointer;
+}
+.links .bottom button:hover, .links .top button:hover{
+  transform: scale(1.05);
+  transition: 50ms ease-in;
+}
+
+
+.links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 128px;
+}
+
+.links .top, .links .bottom{
+  display: flex;
+  gap:32px;
+}
+
+footer{
+  background-color: var(--dois);
+  height:3rem;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-left: 35px;
+  width: 100vw;
+  color:white;
+
+}
