@@ -3,6 +3,8 @@
   margin: 0;
   gap: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+
 }
 html {
   scroll-behavior: smooth;
@@ -29,7 +31,7 @@ nav{
   gap: 35px;
   padding-left: 35px;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 1000;
 }
 
@@ -50,7 +52,7 @@ nav a{
   position: absolute;
   color:white;
   font-weight: bold;
-  top: 400px;
+  top: 350px;
   left: 220px;
   background-color: var(--cinco);
   padding: 10px;
@@ -264,7 +266,140 @@ footer{
   align-items: center;
   gap: 35px;
   padding-left: 35px;
-  width: 100vw;
+  width: 100%;
   color:white;
+}
 
+
+
+@media (max-width: 768px) {
+
+  nav {
+    width: 100%;
+    padding: 0 15px;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+
+  /* HERO */
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+  }
+
+  .hero .pfp {
+    width: 200px;
+    margin: 30px 0 15px 0;
+  }
+
+  .hero .name {
+    position: static;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .typing {
+    position: static;
+    font-size: 32px;
+    text-align: center;
+    margin-top: -60px;
+  }
+
+  .terminal {
+    position: static;
+    width: 90%;
+    margin-top: 20px;
+  }
+
+
+  /* TÍTULOS */
+
+  .session {
+    font-size: 40px;
+  }
+
+  #tec {
+    margin-top: 80px;
+  }
+
+
+  /* TECNOLOGIAS */
+
+  .tecnologias .top,
+  .tecnologias .bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tecnologias .top img,
+  .tecnologias .bottom img{
+    height: 64px;
+  }
+
+
+  /* PROJETOS */
+
+  .projetos {
+    margin: 0 20px;
+  }
+
+  .projetos .card .title {
+    font-size: 30px;
+  }
+
+  .projetos .card .body {
+    flex-direction: column;
+  }
+
+  .projetos .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .projetos .card .body .right {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .projetos .card .body .right p {
+    font-size: 20px;
+  }
+
+  .projetos .card .body .right .bottom {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .projetos .card .body .right .bottom button {
+    width: 100%;
+  }
+
+
+  /* LINKS */
+
+  .links .top,
+  .links .bottom {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .links .top button,
+  .links .bottom button {
+    width: 100%;
+  }
+
+
+  footer {
+    width: 100%;
+    padding-left: 15px;
+    font-size: 13px;
+  }
 }
