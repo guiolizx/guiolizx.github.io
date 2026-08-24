@@ -6,7 +6,7 @@ import microconnect from "./assets/microconnet.png"
 import portifolio from "./assets/portifolio.png"
 import gd_logo from "./assets/gd_logo.png"
 import ase_logo from "./assets/ase_logo.png"
-import favicon from "./assets/favicon.png"
+
 import curriculo from "./assets/Currículo - Guilherme Oliveira.pdf"
 import './App.css'
 
@@ -73,7 +73,7 @@ function App() {
 
   return (
     <>
-      <link rel='icon' href={favicon}></link>
+      
       <title>Guilherme Oliveira | Portifolio</title>
       <nav>
         <a href="#hero">Início</a>
