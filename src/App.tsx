@@ -3,6 +3,7 @@ import pfp from "./assets/pfp.png"
 import terminal_bg from "./assets/terminal_bg.png"
 import pessam from "./assets/pessam.png"
 import microconnect from "./assets/microconnet.png"
+import portifolio from "./assets/portifolio.png"
 import gd_logo from "./assets/gd_logo.png"
 import ase_logo from "./assets/ase_logo.png"
 import curriculo from "./assets/Currículo - Guilherme Oliveira.pdf"
@@ -74,7 +75,7 @@ function App() {
       <title>Guilherme Oliveira | Portifolio</title>
       <nav>
         <a href="#hero">Início</a>
-        <a href='#tec'>Tecnlogoias</a>
+        <a href='#tec'>Tecnologias</a>
         <a href="#proj">Projetos</a>
         <a href="#lu">Links Úteis</a>
       </nav>
@@ -91,19 +92,19 @@ function App() {
       <h1 className='session' id="tec">Tecnologias</h1>
       <div className='tecnologias'>
         <div className='top'>
-          <img title="JavaScript" src={logos["js"]}></img>
-          <img title="C" src={logos["c"]}></img>
-          <img title="Python" src={logos["python"]}></img>
-          <img title="C++" src={logos["cpp"]}></img>
-          <img title="C#" src={logos["c-sharp"]}></img>
-          <img title="HTML" src={logos["html"]}></img>
+          <img className='icon' title="JavaScript" src={logos["js"]}></img>
+          <img className='icon' title="C" src={logos["c"]}></img>
+          <img className='icon' title="Python" src={logos["python"]}></img>
+          <img className='icon' title="C++" src={logos["cpp"]}></img>
+          <img className='icon' title="C#" src={logos["c-sharp"]}></img>
+          <img className='icon' title="HTML" src={logos["html"]}></img>
         </div>
         <div className='bottom'>
-          <img title="TypeScript" src={logos["ts"]}></img>
-          <img title="React" src={logos["react"]}></img>
-          <img title="CSS" src={logos["css"]}></img>
-          <img title="Godot" src={logos["godot"]}></img>
-          <img title="Unity" src={logos["unity"]}></img>
+          <img className='icon' title="TypeScript" src={logos["ts"]}></img>
+          <img className='icon' title="React" src={logos["react"]}></img>
+          <img className='icon' title="CSS" src={logos["css"]}></img>
+          <img className='icon' title="Godot" src={logos["godot"]}></img>
+          <img className='icon' title="Unity" src={logos["unity"]}></img>
 
         </div>
       </div>
@@ -129,9 +130,9 @@ function App() {
                 <div className='tecu'>
                   <h3>Tecnlogias Usadas</h3>
                   <div>
-                    <img title="GDScript" src={gd_logo}></img>
-                    <img title="Godot" src={logos["godot"]}></img>
-                    <img title="Aseprite" src={ase_logo}></img>
+                    <img className='icon' title="GDScript" src={gd_logo}></img>
+                    <img className='icon' title="Godot" src={logos["godot"]}></img>
+                    <img className='icon' title="Aseprite" src={ase_logo}></img>
                   </div>
                 </div>
               </div>
@@ -157,9 +158,9 @@ function App() {
                 <div className='tecu'>
                   <h3>Tecnlogias Usadas</h3>
                   <div>
-                    <img title="CSS" src={logos["css"]}></img>
-                    <img title="JavaScript" src={logos["js"]}></img>
-                    <img title="HTML" src={logos["html"]}></img>
+                    <img className='icon' title="CSS" src={logos["css"]}></img>
+                    <img className='icon' title="JavaScript" src={logos["js"]}></img>
+                    <img className='icon' title="HTML" src={logos["html"]}></img>
                   </div>
                 </div>
               </div>
@@ -170,9 +171,9 @@ function App() {
         <div className='card'>
           <h1 className='title'>Guilherme Oliveira | Portifolio - 2026</h1>
           <div className='body'>
-            <img src={microconnect}></img>
+            <img src={portifolio}></img>
             <div className='right'>
-              <p>Plataforma web criada para aproximar pequenos produtores rurais de compradores, desenvolvida com HTML, CSS e JavaScript.</p>
+              <p>Portfólio pessoal desenvolvido com React, TypeScript e Vite, criado para apresentar meus projetos, tecnologias e experiências na área de desenvolvimento de software de forma organizada e acessível.</p>
               <div className='bottom'>
                 <button onClick={()=>window.location.href="https://github.com/guihPprt/projeto_integrador"}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="39" viewBox="0 0 40 39" fill="none">
@@ -185,9 +186,9 @@ function App() {
                 <div className='tecu'>
                   <h3>Tecnlogias Usadas</h3>
                   <div>
-                    <img title="CSS" src={logos["css"]}></img>
-                    <img title="JavaScript" src={logos["js"]}></img>
-                    <img title="HTML" src={logos["html"]}></img>
+                    <img className='icon' title="CSS" src={logos["css"]}></img>
+                    <img className='icon' title="JavaScript" src={logos["js"]}></img>
+                    <img className='icon' title="HTML" src={logos["html"]}></img>
                   </div>
                 </div>
               </div>

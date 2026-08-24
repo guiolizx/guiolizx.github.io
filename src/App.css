@@ -223,3 +223,14 @@ footer { padding: 1.5rem; background: var(--dois); color: white; text-align: cen
   html { scroll-behavior: auto; }
   .cursor { animation: none; }
 }
+
+
+.icon {
+  transform: scale(1);
+  transition: ease 150ms;
+}
+
+.icon:hover {
+  transition: ease 150ms;
+  transform: scale(1.1);
+}
